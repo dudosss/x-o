@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <script src="https://vk.com/js/api/openapi.js?168" type="text/javascript"></script>
+        <!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+<script type="text/javascript">
+  VK.init({apiId: 7811300, onlyWidgets: true});
+</script>
         <script data-ad-client="ca-pub-8971639295735473" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <meta charset="utf-8"> 
         <title>Многопользовательские крестики нолики</title>
@@ -13,16 +18,14 @@
             }
         </style>
     </head>
-    <body>
-        <script type="text/javascript">
-  VK.init({
-    apiId: grass381,
-    onlyWidgets: true
-  });
-</script><div id="vk_comments"></div>
+    <body> 
+        <!-- Put this div tag to the place, where the Comments block will be -->
+<div id="vk_comments"></div>
 <script type="text/javascript">
- VK.Widgets.Comments('vk_comments');
+VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
 </script>
+        
+        
         
         <header>
               <div class="logo">
